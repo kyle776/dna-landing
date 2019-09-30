@@ -1,0 +1,40 @@
+%nav.navbar.navbar-expand-lg.navbar-light.scrolling-navbar.white
+  .container
+    %a.navbar-brand.font-weight-bold.title{:href => "../home/main.html"} DNA
+    %button.navbar-toggler{"aria-controls" => "navbarTogglerDemo02", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarTogglerDemo02", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarTogglerDemo02.collapse.navbar-collapse
+      %ul.list-unstyled.navbar-nav.mr-auto
+        %li.nav-item.dropdown.ml-4.mb-0
+          %a#navbarDropdownMenuLink.nav-link.dropdown-toggle.title{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"} Homepage
+          .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
+
+        %li.nav-item.dropdown.ml-4
+          %a#navbarDropdownMenuLink12.nav-link.dropdown-toggle.title{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"} Features
+          .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
+            .dropdown-item= link_to 'Repository', '#'
+            .dropdown-item= link_to 'Blueprint', '#'
+            .dropdown-item= link_to 'Quality Assurance', '#'
+            .dropdown-item= link_to 'Defect Management', '#'
+        %li.nav-item.ml-4
+          .title{"data-offset" => "90"}
+            = link_to 'Pricing', '#', class: 'nav-link'
+        %li.nav-item.ml-4
+          .title{"data-offset" => "90"}
+            = link_to 'Documentation', '#', class: 'nav-link'
+      / Social Icon
+      %ul.navbar-nav.nav-flex-icons
+        %li.nav-item
+          %a.nav-link
+            %i.fab.fa-facebook-f.title
+        %li.nav-item
+          %a.nav-link
+            %i.fab.fa-twitter.title
+        %li.nav-item
+          %a.nav-link
+            %i.fab.fa-instagram.title
+        %li.nav-item.ml-3
+          %a.btn.pink-gradient.btn-rounded.btn-sm.font-weight-bold{"data-offset" => "90", :href => "#download"}
+            = 'Free trial'
+          %a.btn.aqua-gradient.btn-rounded.btn-sm.font-weight-bold{"data-offset" => "90", :href => "#download"}
+            = 'Log in'
